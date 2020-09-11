@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -mX
+ls -mXa
