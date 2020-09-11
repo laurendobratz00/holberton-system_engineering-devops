@@ -1,3 +1,2 @@
 #!/bin/bash
-chmod u+x script.sh
-
+chmod 0700 script.sh
