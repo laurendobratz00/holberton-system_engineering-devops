@@ -1,2 +1,2 @@
 #!/bin/bash
-sort | ls -l /ect/passwd
+sort | ls -l /home /ect/passwd
