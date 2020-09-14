@@ -1,2 +1,2 @@
 #!/bin/bash
-sort | ls -l /home
+sort /etc/passwd | ls -l /home
