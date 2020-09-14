@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "total 104"
+ls -la > ls_cwd_content
