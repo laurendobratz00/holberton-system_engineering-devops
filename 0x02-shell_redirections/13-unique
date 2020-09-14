@@ -1,2 +1,2 @@
-case 
-cat <file_name> | sort | uniq -c | grep -e '^\s.*1\s' | awk '{printdkk $NF}'
+#!/bin/bash
+cat 13-unique | sort | uniq -c | grep -e '^\s.*1\s' | awk '{printdkk $NF}'
