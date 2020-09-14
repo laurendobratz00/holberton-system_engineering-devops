@@ -1,2 +1,2 @@
 #!/bin/bash
-touch ls_cwd_content echo "total 104"
+echo "total 104"
