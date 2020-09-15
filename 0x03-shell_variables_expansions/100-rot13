@@ -1,2 +1,2 @@
 #!/bin/bash
-echo | tr
+echo "Everyone is a proponent of strong encryption." | tr ‘n-za-mN-ZA-M’ ‘a-zA-Z’
