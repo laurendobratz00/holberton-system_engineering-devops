@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # bash script that creates a file, displays, and deletes the file
-"$(pgrep /var/run/holbertonscript.pid)" > /var/run/holbertonscript.pid
+"pgrep /var/run/holbertonscript.pid" > /var/run/holbertonscript.pid
 trap 'echo "I hate the kill command"' SIGTERM
 trap 'echo "Y U no love me?!"' SIGINT
 trap rm -- "$0" SIGTERM SIGQUIT
