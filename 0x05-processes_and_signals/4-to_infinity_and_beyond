@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
 # a Bash script that displays To infinity and beyond indefinitely
-for (( ; ; ))
-do
-	echo "To infinity and beyond"
-	sleep 0
-done
+while true ; do echo "To infinity and beyond"; sleep 0; done
