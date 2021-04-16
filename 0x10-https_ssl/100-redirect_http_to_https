@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script creates a certificate using certbot and configure HAproxy to
+# accept encrypted traffic for your subdomain www.
+sudo apt-get update
+sudo apt-get install -y certbot
+sudo service haproxy reload
+sudo certbot certonly --standalone -d www.laurendobratz.tech --non-interactive --agree-tos --email	laurendobratz@icloud.com --http-01-port=8888
+sudo mkdir -p /etc/ssl/www.laurendobratz.tech
+sudo cat /etc/letsencrypt/live/www.<yourdomainname>.tech/fullchain.pem /etc/letsencrypt/live/www.laurendobratz.tech/privkey.pem | sudo tee /etc/ssl/www.laurendobratz.tech/www.laurendobratz.tech.pem
